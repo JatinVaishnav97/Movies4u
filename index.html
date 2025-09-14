@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Globe Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="globe-section">
+            <canvas id="globeCanvas"></canvas>
+            <div class="floating-elements">
+                <div class="floating-element chart">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-element user">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <div class="floating-element time">
+                    <i class="fas fa-hourglass-half"></i>
+                </div>
+                <div class="floating-element data">
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Create Your Account</h1>
+                    <p class="subtitle">Join the next generation platform</p>
+                </div>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" id="name" required>
+                        <label for="name">Name</label>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-shield-alt icon"></i>
+                        <input type="password" id="confirmPassword" required>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="glow-line"></div>
+                    </div>
+                    <button type="submit" class="signup-btn">
+                        <span>Sign Up</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="globe.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
